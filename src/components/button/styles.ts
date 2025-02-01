@@ -39,9 +39,6 @@ export const Container = styled.button<ContainerProps>`
     (props)=> props.$variant === 'default' ?
      theme.colors.primary : theme.colors.black};
 
-    ${(props)=> props.$variant === 'outline' && css`
-        border: 1px solid ${theme.colors.primary};
-    `
-     };
+    border: 1px solid ${theme.colors.primary};
     }
 `;
