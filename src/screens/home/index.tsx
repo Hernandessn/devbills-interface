@@ -25,6 +25,7 @@ import { Transaction } from "../../components/transaction";
 import { formatCurrency } from "../../utils/format-currency";
 import { CreateCategoryDialog } from "../../components/create-category-dialog";
 import { CreateTransactionDialog } from "../../components/create-transaction-dialog";
+import { CategoriesPieChart } from "../../components/categories-pie-chart";
 
 
 
@@ -74,7 +75,9 @@ export function Home() {
                                 title="Gastos"
                                 subtitle="Despesas por categoria no período" />
                         </header>
-                        <ChartContent></ChartContent>
+                        <ChartContent>
+                        <CategoriesPieChart />
+                        </ChartContent>
                     </ChartContainer>
                     <ChartContainer>
                         <header>
@@ -93,7 +96,9 @@ export function Home() {
                                 <ButtonIcon />
                             </ChartAction>
                         </header>
-                        <ChartContent></ChartContent>
+                        <ChartContent>
+                            
+                        </ChartContent>
                     </ChartContainer>
                 </Section>
                 <Aside>
