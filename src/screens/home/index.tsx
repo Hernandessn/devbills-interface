@@ -24,6 +24,7 @@ import { Card } from "../../components/card";
 import { Transaction } from "../../components/transaction";
 import { formatCurrency } from "../../utils/format-currency";
 import { CreateCategoryDialog } from "../../components/create-category-dialog";
+import { CreateTransactionDialog } from "../../components/create-transaction-dialog";
 
 
 
@@ -33,7 +34,7 @@ export function Home() {
             <Header>
                 <Logo />
                 <div>
-                    <Button>Nova transação</Button>
+                  <CreateTransactionDialog />
                   <CreateCategoryDialog />
                     
                 </div>

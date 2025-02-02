@@ -31,14 +31,12 @@ export function CreateCategoryDialog(){
 
 
             <form >
-                <div>
-                    <Input 
+                 <Input 
                     label="Nome"
                     placeholder="Nome da categoria..."/>
                     <Input 
                     label="Cor"
                    type="color"/>
-                </div>
                 <footer>
                 <Button onClick={handleClose} variant="outline" type="button"> Cancelar</Button>
                 <Button onClick={onSubmit}  type="button"> Cadastrar</Button>
