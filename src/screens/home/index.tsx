@@ -23,7 +23,7 @@ import {
 import { Card } from "../../components/card";
 import { Transaction } from "../../components/transaction";
 import { formatCurrency } from "../../utils/format-currency";
-import { Dialog } from "../../components/dialog";
+import { CreateCategoryDialog } from "../../components/create-category-dialog";
 
 
 
@@ -33,10 +33,9 @@ export function Home() {
             <Header>
                 <Logo />
                 <div>
-                    <Dialog
-                     trigger={<Button>Nova transação</Button>}
-                      >Olá</Dialog>
-                    <Button>Nova Categoria</Button>
+                    <Button>Nova transação</Button>
+                  <CreateCategoryDialog />
+                    
                 </div>
             </Header>
             <Main>
