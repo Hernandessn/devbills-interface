@@ -26,6 +26,7 @@ import { formatCurrency } from "../../utils/format-currency";
 import { CreateCategoryDialog } from "../../components/create-category-dialog";
 import { CreateTransactionDialog } from "../../components/create-transaction-dialog";
 import { CategoriesPieChart } from "../../components/categories-pie-chart";
+import { FinancialEvolutionBarChart } from "../../components/financial-evolution-bar-chart";
 
 
 
@@ -97,7 +98,7 @@ export function Home() {
                             </ChartAction>
                         </header>
                         <ChartContent>
-                            
+                            <FinancialEvolutionBarChart />
                         </ChartContent>
                     </ChartContainer>
                 </Section>
