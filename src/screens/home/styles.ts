@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const Header = styled.header`
     display: flex;
     align-items: center;
@@ -42,4 +43,11 @@ export const InputGroup = styled.div`
     max-width: 22.5rem;
     width: 100%;
     
+`;
+
+export const Balance = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
 `;
