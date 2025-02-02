@@ -105,3 +105,10 @@ export const SearchTransaction = styled.div`
     gap: 0.5rem;
     
 `;
+
+
+export const TransactionGroup = styled.div`
+    display: flex;
+    flex-direction: column;
+    padding: 0 0.75rem;
+`;

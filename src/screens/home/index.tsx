@@ -17,11 +17,13 @@ import {
     InputGroup,
     Main,
     SearchTransaction,
-    Section
+    Section,
+    TransactionGroup
 } from "./styles";
 import { Card } from "../../components/card";
 import { Transaction } from "../../components/transaction";
 import { formatCurrency } from "../../utils/format-currency";
+import { Dialog } from "../../components/dialog";
 
 
 
@@ -31,7 +33,9 @@ export function Home() {
             <Header>
                 <Logo />
                 <div>
-                    <Button>Nova transação</Button>
+                    <Dialog
+                     trigger={<Button>Nova transação</Button>}
+                      >Olá</Dialog>
                     <Button>Nova Categoria</Button>
                 </div>
             </Header>
@@ -102,16 +106,16 @@ export function Home() {
                             />
                             <ButtonIcon />
                         </SearchTransaction>
-                        <Transaction
-                            id={1}
-                            amount={20000}
-                            date="09/10/23"
-                            category={{ title: 'Alimentação', color: "#fff" }} 
-                            title="Mercado" 
-                            />
-
-
                     </header>
+                    <TransactionGroup>
+                            <Transaction
+                                id={1}
+                                amount={20000}
+                                date="09/10/23"
+                                category={{ title: 'Alimentação', color: "#fff" }}
+                                title="Mercado"
+                            />
+                        </TransactionGroup>
                 </Aside>
 
             </Main>
